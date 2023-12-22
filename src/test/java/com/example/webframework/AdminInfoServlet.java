@@ -1,26 +1,17 @@
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+// UserController.java
+package com.example.demo;
 
-public class AdminInfoServlet extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Simulate access control check
-        if (isAdmin(request)) {
-            // Return the admin information
-            response.setContentType("text/html");
-            PrintWriter out = response.getWriter();
-            out.println("<html><body>");
-            out.println("Admin Information");
-            out.println("</body></html>");
-        } else {
-            // Return an error message
-            response.sendError(HttpServletResponse.SC_FORBIDDEN, "Access Denied");
-        }
-    }
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-    private boolean isAdmin(HttpServletRequest request) {
-        // Simulate admin access control check
-        String role = request.getParameter("role");
-        return role.equals("admin");
+@RestController
+public class UserController {
+
+    @GetMapping("/user")
+    public String getUserInfo() {
+        // Insecure direct object reference vulnerability
+        // This endpoint should only be accessible to authenticated users with specific roles
+        // However, it currently allows any user to access sensitive user information
+        return "Sensitive user information";
     }
 }
