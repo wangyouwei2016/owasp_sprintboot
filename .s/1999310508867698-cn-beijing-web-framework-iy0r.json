@@ -1,0 +1,40 @@
+{
+  "statefulConfig": {
+    "serviceName": "web-framework-iy0r",
+    "description": "Serverless Devs Web Framework Service",
+    "role": "",
+    "logConfig": {
+      "project": "",
+      "logstore": "",
+      "enableRequestMetrics": false,
+      "enableInstanceMetrics": false,
+      "logBeginRule": "None"
+    },
+    "serviceId": "dbaa5c88-98eb-4857-b905-45682f1e316d",
+    "createdTime": "2022-11-09T02:09:13Z",
+    "lastModifiedTime": "2022-11-09T03:26:33Z",
+    "vpcConfig": {
+      "vpcId": "",
+      "vSwitchIds": [],
+      "securityGroupId": "",
+      "role": "",
+      "anytunnelViaENI": null
+    },
+    "internetAccess": true,
+    "nasConfig": {
+      "userId": -1,
+      "groupId": -1,
+      "mountPoints": []
+    },
+    "ossMountConfig": {
+      "mountPoints": []
+    },
+    "vendorConfig": null,
+    "tracingConfig": {
+      "type": null,
+      "params": null,
+      "jaegerConfig": null
+    },
+    "name": "web-framework-iy0r"
+  }
+}

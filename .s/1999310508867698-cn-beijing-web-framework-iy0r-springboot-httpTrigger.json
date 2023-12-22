@@ -1,0 +1,30 @@
+{
+  "statefulConfig": {
+    "triggerName": "httpTrigger",
+    "description": "",
+    "triggerId": "6405d583-657b-4c8b-9fc8-f106f29045aa",
+    "sourceArn": null,
+    "triggerType": "http",
+    "invocationRole": null,
+    "qualifier": null,
+    "urlInternet": "https://springboot-web-frawork-iyr-fxhtocymzx.cn-beijing.fcapp.run",
+    "urlIntranet": "https://springboot-web-frawork-iyr-fxhtocymzx.cn-beijing-vpc.fcapp.run",
+    "triggerConfig": {
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "HEAD",
+        "OPTIONS"
+      ],
+      "authType": "anonymous",
+      "disableURLInternet": false
+    },
+    "createdTime": "2022-11-09T02:09:28Z",
+    "lastModifiedTime": "2022-11-09T03:26:33Z",
+    "status": null,
+    "targetArn": null,
+    "name": "httpTrigger"
+  }
+}

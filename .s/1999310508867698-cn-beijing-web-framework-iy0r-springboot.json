@@ -1,0 +1,47 @@
+{
+  "statefulConfig": {
+    "functionId": "f4861011-b5dc-422e-b4e7-63f3ce67ef52",
+    "functionName": "springboot",
+    "description": "Serverless Devs Web Framework Function",
+    "runtime": "custom",
+    "handler": "index.handler",
+    "timeout": 30,
+    "initializer": "",
+    "initializationTimeout": 3,
+    "codeSize": 16829048,
+    "codeChecksum": "15026512653648297356",
+    "memorySize": 1024,
+    "gpuMemorySize": null,
+    "environmentVariables": {},
+    "createdTime": "2022-11-09T02:09:28Z",
+    "lastModifiedTime": "2022-11-09T03:26:32Z",
+    "instanceConcurrency": 1,
+    "instanceSoftConcurrency": null,
+    "customContainerConfig": null,
+    "caPort": 9000,
+    "instanceType": "e1",
+    "layers": null,
+    "layersArnV2": null,
+    "instanceLifecycleConfig": {
+      "preFreeze": {
+        "handler": "",
+        "timeout": 3
+      },
+      "preStop": {
+        "handler": "",
+        "timeout": 3
+      }
+    },
+    "customDNS": null,
+    "customRuntimeConfig": {
+      "command": [
+        "java"
+      ],
+      "args": [
+        "org.springframework.boot.loader.JarLauncher"
+      ]
+    },
+    "customHealthCheckConfig": null,
+    "name": "springboot"
+  }
+}
