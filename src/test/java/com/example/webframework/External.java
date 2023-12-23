@@ -1,7 +1,6 @@
 import java.sql.*;
 import java.util.*;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.Claims;
+
 
 class LoggedOutException extends Exception {
     public LoggedOutException(String message) {
