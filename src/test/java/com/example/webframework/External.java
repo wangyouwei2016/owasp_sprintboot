@@ -1,12 +1,4 @@
-import java.sql.*;
-import java.util.*;
 
-
-class LoggedOutException extends Exception {
-    public LoggedOutException(String message) {
-        super(message);
-    }
-}
 
 public class External {
 
