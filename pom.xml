@@ -1,47 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.8.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>webframework</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>webframework</name>
-	<description>Demo project for Spring Boot</description>
-
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<finalName>${project.name}</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<executable>true</executable>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>vulnerable-project</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <dependencies>
+    <!-- 漏洞1: 使用了不安全的第三方库 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>insecure-library</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <!-- 漏洞2: 使用了过时的加密算法 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>outdated-crypto</artifactId>
+      <version>2.3</version>
+    </dependency>
+    <!-- 漏洞3: 存在注入漏洞 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>injection-vulnerable</artifactId>
+      <version>3.5</version>
+    </dependency>
+    <!-- 漏洞4: 使用了不安全的网络传输协议 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>insecure-protocol</artifactId>
+      <version>4.1</version>
+    </dependency>
+    <!-- 漏洞5: 依赖的健康状况不佳 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>unhealthy-dependency</artifactId>
+      <version>5.2</version>
+    </dependency>
+    <!-- 漏洞6: 存在已知的漏洞 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>known-vulnerability</artifactId>
+      <version>6.4</version>
+    </dependency>
+    <!-- 漏洞7: 未测试依赖项的校验和 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>unchecked-checksum</artifactId>
+      <version>7.7</version>
+    </dependency>
+    <!-- 漏洞8: 使用了不安全的第三方库 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>insecure-library-2</artifactId>
+      <version>8.9</version>
+    </dependency>
+    <!-- 漏洞9: 存在注入漏洞 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>injection-vulnerable-2</artifactId>
+      <version>9.6</version>
+    </dependency>
+    <!-- 漏洞10: 使用了不安全的网络传输协议 -->
+    <dependency>
+      <groupId>org.vulnerable</groupId>
+      <artifactId>insecure-protocol-2</artifactId>
+      <version>10.0</version>
+    </dependency>
+  </dependencies>
 </project>
